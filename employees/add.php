@@ -145,7 +145,9 @@ if (isset($_POST['save'])) {
         } else {
 
             // Database error
-            $errors[] = "Database error: " . $stmt->error;
+            error_log("Employee insert failed: " . $stmt->error);
+
+            $errors[] = "Unable to save the employee right now. Please try again.";
         }
 
         $stmt->close();
@@ -299,7 +301,7 @@ if (isset($_POST['save'])) {
                                 Salary
                             </label>
 
-                            <<input
+                            <input
                                 type="number"
                                 name="salary"
                                 class="form-control"

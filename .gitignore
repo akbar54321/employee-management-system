@@ -15,3 +15,21 @@ Thumbs.db
 # Temporary files
 *.tmp
 *.temp
+
+
+# Private credentials
+.env
+.env.*
+!.env.example
+
+# Local mail configuration containing credentials
+/config/mail_config.php
+
+# Logs and temporary files
+*.log
+
+# Dependencies installed by Composer
+/vendor/
+
+# Postponed PDF extractor backup
+/employees/add_pdf_backup.php

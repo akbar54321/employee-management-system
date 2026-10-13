@@ -48,7 +48,7 @@
 
                         </div>
 
-                        <a href="#" class="btn btn-primary"> Get Started   </a>
+                        <a href="login.php" class="btn btn-primary"> Get Started   </a>
 
                     </div>
 

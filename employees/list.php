@@ -56,7 +56,7 @@ $result = $conn->query($sql);
                             data-bs-dismiss="alert"
                             aria-label="Close">
                         </button>
-                   </div>
+                    </div>
                 <?php } ?>
                 <?php
                 if (isset($_GET['success']) && $_GET['success'] == 'updated') {
@@ -94,17 +94,19 @@ $result = $conn->query($sql);
                     </div>
 
                 <?php } ?>
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h4 class="mb-0">Employee List</h4>
+                    <div>
+                        <a href="../admin_dashboard.php" class="btn btn-secondary me-2">
+                            Back to Dashboard
+                        </a>
 
-
-                <div class="d-flex justify-content-between mb-3">
-
-                    <h4>Employee List</h4>
-
-                    <a href="add.php" class="btn btn-primary">
-                        + Add Employee
-                    </a>
-
+                        <a href="add.php" class="btn btn-primary">
+                            + Add Employee
+                        </a>
+                    </div>
                 </div>
+
 
 
                 <div class="table-responsive">
